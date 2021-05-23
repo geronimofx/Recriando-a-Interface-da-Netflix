@@ -1,0 +1,40 @@
+/*reset do css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: NetflixSansRegular;
+}
+
+/* adicionando a font externa do netflix ao projeto */
+@font-face {
+    font-family: NetflixSansRegular;
+    font-family: NetflixSansMedium.ttf;
+    src: url(../fonts/NetflixSansRegular.ttf);
+}
+
+/*declarando variáveis no CSS para só alterar a cor em apenas um lugar caso precisa*/
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+body{
+    background: var(--preto);
+}
+
+header .logo{
+    font-family: NetflixSansMedium;
+    font-size: 40px;
+    color: var(--vermelho);
+}
+
+header nav a{
+    color: #AAA;
+    margin-right: 15px;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
