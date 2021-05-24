@@ -20,14 +20,11 @@
     --preto: #141414;
 }
 
-body{
-    background: var(--preto);
-}
-
 header .logo{
     font-family: NetflixSansMedium;
     font-size: 40px;
     color: var(--vermelho);
+    margin-left: 10px;
 }
 
 header nav a{
@@ -37,4 +34,24 @@ header nav a{
 
 header nav a:hover{
     color: #FFF;
+}
+
+header .container{
+    display: flex;
+    /* flex-direction: row;  propriedade padrão ao se colocar o display flex*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{
+    background: var(--preto);
+    color: white;
+}
+
+/* filme principal */
+.filme-principal{
+    font-size: 16px;
+    background-image: url('./img/capa-house.jpg');
+    background-size: cover;
+    height: 400px;
 }
