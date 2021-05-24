@@ -8,11 +8,11 @@
 }
 
 /* adicionando a font externa do netflix ao projeto */
-@font-face {
+/* @font-face {
     font-family: NetflixSansRegular;
     font-family: NetflixSansMedium.ttf;
     src: url(../fonts/NetflixSansRegular.ttf);
-}
+} */
 
 /*declarando variáveis no CSS para só alterar a cor em apenas um lugar caso precisa*/
 :root{
@@ -51,7 +51,45 @@ body{
 /* filme principal */
 .filme-principal{
     font-size: 16px;
-    background-image: url('./img/capa-house.jpg');
+    background-image: url('/img/capa-house.jpg');
+
+    height: 600px;
     background-size: cover;
-    height: 400px;
+    /* background-repeat: no-repeat; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sinopse{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.botao{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
 }
