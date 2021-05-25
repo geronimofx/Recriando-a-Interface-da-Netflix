@@ -11,7 +11,8 @@
 /* @font-face {
     font-family: NetflixSansRegular;
     font-family: NetflixSansMedium.ttf;
-    src: url(../fonts/NetflixSansRegular.ttf);
+    src: url(../font/NetflixSansMedium.ttf);
+    src: url(../font/NetflixSansRegular.ttf);
 } */
 
 /*declarando variáveis no CSS para só alterar a cor em apenas um lugar caso precisa*/
@@ -51,7 +52,7 @@ body{
 /* filme principal */
 .filme-principal{
     font-size: 16px;
-    background-image: url('/img/capa-house.jpg');
+    background-image: url('/img/BP-cover.jpg');
 
     height: 600px;
     background-size: cover;
@@ -100,4 +101,10 @@ body{
 
 .filme-principal .container{
     width: 50%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
