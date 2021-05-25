@@ -93,3 +93,11 @@ body{
 .botao i{
     margin-right: 8px;
 }
+
+.container{
+    margin-left: 25px;
+}
+
+.filme-principal .container{
+    width: 50%;
+}
